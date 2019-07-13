@@ -1,0 +1,17 @@
+li {
+  width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+.done {
+  color: red;
+  text-decoration: line-through;
+}
+
+.undone {
+  color: #61dafb;
+}
+
+.icon {
+  margin: 6px 10px 6px 0;
+}
