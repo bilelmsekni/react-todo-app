@@ -1,13 +1,12 @@
 import React from 'react';
 import './Todo-Item.css';
-
-const TodoItem: React.FC = () => {
+const TodoItem: React.FC<{ value: string; itemClass: string; onClose: () => void }> = ({ value, itemClass, onClose }) => {
   return (
     <li className="list-group-item">
-      <div className="undone">
+      <div className={itemClass}>
         <span className="glyphicon glyphicon-ok icon" aria-hidden="true" />
-        learn react
-        <button type="button" className="close">
+        {value}
+        <button type="button" className="close" onClick={onClose}>
           &times;
         </button>
       </div>
